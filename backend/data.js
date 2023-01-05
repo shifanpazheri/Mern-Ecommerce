@@ -48,6 +48,30 @@ const data = {
       numReviews: 10,
       description: "high quality product",
     },
+    {
+      name: "Puma Slim Pant",
+      slug: "puma-slim-pant",
+      category: "Pants",
+      image: "/images/p5.png", // 679px × 829px --- very imp
+      price: 25,
+      countInStock: 15,
+      brand: "Nike",
+      rating: 4.5,
+      numReviews: 14,
+      description: "high quality product",
+    },
+    {
+      name: "Nike Fit Pant",
+      slug: "nike-fit-pant",
+      category: "Pants",
+      image: "/images/p6.png", // 679px × 829px --- very imp
+      price: 65,
+      countInStock: 5,
+      brand: "Puma",
+      rating: 4.5,
+      numReviews: 10,
+      description: "high quality product",
+    },
   ],
 };
 export default data;
