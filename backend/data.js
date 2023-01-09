@@ -4,7 +4,7 @@ const data = {
       name: "Nike Slim shirt",
       slug: "nike-slim-shirt",
       category: "Shirts",
-      image: "/images/p1.png", // 679px × 829px --- very imp
+      image: "/images/p1.jpg", // height= 679px × width=829px jpg  --- very imp
       price: 120,
       countInStock: 10,
       brand: "Nike",
@@ -16,9 +16,9 @@ const data = {
       name: "Adidas Fit Shirt",
       slug: "adidas-fit-shirt",
       category: "Shirts",
-      image: "/images/p2.png", // 679px × 829px --- very imp
+      image: "/images/p2.jpg", // height= 679px × width=829px jpg  --- very imp
       price: 250,
-      countInStock: 20,
+      countInStock: 0,
       brand: "Adidas",
       rating: 4.0,
       numReviews: 10,
@@ -28,7 +28,7 @@ const data = {
       name: "Nike Slim Pant",
       slug: "nike-slim-pant",
       category: "Pants",
-      image: "/images/p3.png", // 679px × 829px --- very imp
+      image: "/images/p3.jpg", // height= 679px × width=829px jpg  --- very imp
       price: 25,
       countInStock: 15,
       brand: "Nike",
@@ -40,7 +40,7 @@ const data = {
       name: "Adidas Fit Pant",
       slug: "adidas-fit-pant",
       category: "Pants",
-      image: "/images/p4.png", // 679px × 829px --- very imp
+      image: "/images/p4.jpg", // height= 679px × width=829px jpg  --- very imp
       price: 65,
       countInStock: 5,
       brand: "Puma",
@@ -52,7 +52,7 @@ const data = {
       name: "Puma Slim Pant",
       slug: "puma-slim-pant",
       category: "Pants",
-      image: "/images/p5.png", // 679px × 829px --- very imp
+      image: "/images/p5.jpg", // height= 679px × width=829px jpg  --- very imp
       price: 25,
       countInStock: 15,
       brand: "Nike",
@@ -64,7 +64,7 @@ const data = {
       name: "Nike Fit Pant",
       slug: "nike-fit-pant",
       category: "Pants",
-      image: "/images/p6.png", // 679px × 829px --- very imp
+      image: "/images/p6.jpg", // height= 679px × width=829px jpg  --- very imp
       price: 65,
       countInStock: 5,
       brand: "Puma",
