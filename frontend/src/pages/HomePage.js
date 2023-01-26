@@ -47,7 +47,7 @@ function HomePage() {
       <Helmet>
         <title>Özge Abayas</title>
       </Helmet>
-      <h1>list products</h1>
+      <h1>Featured Products</h1>
       <div className="products">
         {loading ? (
           <LoadingBox />
