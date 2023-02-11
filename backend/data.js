@@ -1,4 +1,25 @@
+import bcrypt from "bcryptjs";
+import dotenv from "dotenv";
+
+dotenv.config();
+
 const data = {
+  users: [
+    {
+      name: "Shifan",
+      phone: 8547310922,
+      email: "shifanspam@gmail.com",
+      password: bcrypt.hashSync(process.env.SHIFAN_PASSWORD),
+      isAdmin: true,
+    },
+    {
+      name: "John",
+      phone: 9447310922,
+      email: "johnjacob@gmail.com",
+      password: bcrypt.hashSync("123456"),
+      isAdmin: false,
+    },
+  ],
   products: [
     {
       // _id: 1,
