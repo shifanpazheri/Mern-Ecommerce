@@ -11,6 +11,7 @@ import { useContext } from "react";
 import { Store } from "./Store";
 import Badge from "react-bootstrap/esm/Badge";
 import SigninPage from "./pages/SigninPage";
+import ShippingAddressPage from "./pages/ShippingAddressPage";
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -19,6 +20,7 @@ function App() {
   const signoutHandler = () => {
     ctxDispatch({ type: "USER_SIGNOUT" });
     localStorage.removeItem("userInfo");
+    localStorage.removeItem("shippingAddress");
   };
 
   return (
@@ -70,6 +72,7 @@ function App() {
               <Route path="/product/:slug" element={<ProductPage />} />
               <Route path="/cart" element={<CartPage />} />
               <Route path="/signin" element={<SigninPage />} />
+              <Route path="/shipping" element={<ShippingAddressPage />}></Route>
               <Route path="/" element={<HomePage />} />
             </Routes>
           </Container>
