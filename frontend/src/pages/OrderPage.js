@@ -4,6 +4,7 @@ import { Helmet } from "react-helmet-async";
 import { useNavigate, useParams } from "react-router-dom";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import Button from "react-bootstrap/Button";
 import ListGroup from "react-bootstrap/ListGroup";
 import Card from "react-bootstrap/Card";
 import { Link } from "react-router-dom";
@@ -97,7 +98,6 @@ export default function OrderScreen() {
                 {order.paymentMethod === "Razorpay"
                   ? "UPI/Debit Card/Credit Card/Netbanking"
                   : "Cash On Delivery"}
-                s
               </Card.Text>
               {order.isPaid ? (
                 <MessageBox variant="success">
@@ -167,6 +167,22 @@ export default function OrderScreen() {
                       <strong>₹{order.totalPrice.toFixed(2)}</strong>
                     </Col>
                   </Row>
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  <div
+                    className="d-grid"
+                    style={{
+                      visibility:
+                        order.paymentMethod === "Razorpay" &&
+                        order.isPaid === false
+                          ? "visible"
+                          : "hidden",
+                    }}
+                  >
+                    <Button type="button" disabled="false">
+                      Pay Now
+                    </Button>
+                  </div>
                 </ListGroup.Item>
               </ListGroup>
             </Card.Body>
