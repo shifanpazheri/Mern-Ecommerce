@@ -17,6 +17,7 @@ import PaymentMethodPage from "./pages/PaymentMethodPage";
 import PlaceOrderPage from "./pages/PlaceOrderPage";
 import OrderPage from "./pages/OrderPage";
 import OrderHistoryPage from "./pages/OrderHistoryPage";
+import Footer from "./components/Footer";
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -95,7 +96,7 @@ function App() {
           </Container>
         </main>
         <footer>
-          <div className="text-center">All right reserved</div>
+          <Footer />
         </footer>
       </div>
     </BrowserRouter>
