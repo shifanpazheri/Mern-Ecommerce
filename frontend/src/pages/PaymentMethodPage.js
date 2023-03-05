@@ -41,7 +41,7 @@ export default function PaymentMethodScreen() {
             <Form.Check
               type="radio"
               id="Razorpay"
-              label="Debit Card, Credit Card, Netbanking, UPI"
+              label="UPI/Debit Card/Credit Card/Netbanking"
               value="Razorpay"
               checked={paymentMethodName === "Razorpay"}
               onChange={(e) => setPaymentMethod(e.target.value)}
