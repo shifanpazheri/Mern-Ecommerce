@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+//Need to call http://localhost:5000/api/seed after updating data.js
 const data = {
   users: [
     {
