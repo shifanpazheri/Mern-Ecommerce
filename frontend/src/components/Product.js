@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Rating from "./Rating";
 import { Store } from "../Store";
 import axios from "axios";
+import { backendUrl } from "../utils";
 
 function Product(props) {
   const { product } = props;
@@ -16,7 +17,9 @@ function Product(props) {
       return item._id === product._id;
     });
     const quantity = existItem ? existItem.quantity + 1 : 1;
-    const { data } = await axios.get("/api/products/" + product._id);
+    const { data } = await axios.get(
+      backendUrl + "/api/products/" + product._id
+    );
     if (data.countInStock < quantity) {
       window.alert("Sorry. Product is out of stock");
       return;
