@@ -7,6 +7,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import axios from "axios";
 import { Store } from "../Store.js";
 import { getError } from "../utils";
+import { backendUrl } from "../utils";
 
 export default function SigninPage() {
   const navigate = useNavigate();
@@ -22,7 +23,7 @@ export default function SigninPage() {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("/api/users/signin", {
+      const { data } = await axios.post(backendUrl + "/api/users/signin", {
         phone,
         password,
       });

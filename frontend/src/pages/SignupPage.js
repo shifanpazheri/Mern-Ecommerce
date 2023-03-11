@@ -6,7 +6,7 @@ import Button from "react-bootstrap/Button";
 import { Helmet } from "react-helmet-async";
 import { useContext, useEffect, useState } from "react";
 import { Store } from "../Store";
-import { getError } from "../utils";
+import { getError, backendUrl } from "../utils";
 
 export default function SignupPage() {
   const navigate = useNavigate();
@@ -29,7 +29,7 @@ export default function SignupPage() {
       return;
     }
     try {
-      const { data } = await Axios.post("/api/users/signup", {
+      const { data } = await Axios.post(backendUrl + "/api/users/signup", {
         name,
         phone,
         email,
