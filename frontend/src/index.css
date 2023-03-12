@@ -45,8 +45,9 @@ main{
   padding: 1rem;
 }
 
-.img-large {
-  max-width: 100%;
+.img-medium {
+  width: 300px;
+  height: 200px;
 }
 
 .img-thumbnail{

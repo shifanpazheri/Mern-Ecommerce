@@ -85,7 +85,7 @@ function ProductPage() {
       <Row>
         <Col md={6}>
           <img
-            className="img-large"
+            className="img-medium"
             src={product.image}
             alt={product.name}
           ></img>
