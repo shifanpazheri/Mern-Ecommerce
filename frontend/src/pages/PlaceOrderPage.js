@@ -39,7 +39,7 @@ export default function PlaceOrderScreen() {
   cart.itemsPrice = round2(
     cart.cartItems.reduce((a, c) => a + c.quantity * c.price, 0)
   );
-  cart.shippingPrice = cart.itemsPrice > 1000 ? round2(0) : round2(50); //purchase above 1000 => free delivery
+  cart.shippingPrice = round2(70);
   cart.taxPrice = round2(0); //update based on tax percentage
   cart.totalPrice = cart.itemsPrice + cart.shippingPrice + cart.taxPrice;
 
